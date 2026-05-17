@@ -1,5 +1,31 @@
 # viem
 
+## 2.50.0
+
+### Minor Changes
+
+- [#4603](https://github.com/wevm/viem/pull/4603) [`0354bb3c6702b32a3761776e5e15eecaa299d0e5`](https://github.com/wevm/viem/commit/0354bb3c6702b32a3761776e5e15eecaa299d0e5) Thanks [@satyakwok](https://github.com/satyakwok)! - Added Sentrix Chain (`sentrix`, id `7119`) and Sentrix Testnet (`sentrixTestnet`, id `7120`) chain definitions.
+
+### Patch Changes
+
+- [#4613](https://github.com/wevm/viem/pull/4613) [`bd1d24420a324cf51ce2ea4efec2d7d048c5d3be`](https://github.com/wevm/viem/commit/bd1d24420a324cf51ce2ea4efec2d7d048c5d3be) Thanks [@Kropiunig](https://github.com/Kropiunig)! - Fixed `encodeEventTopics` incorrectly prepending the event signature as a topic for anonymous events.
+
+- [#4590](https://github.com/wevm/viem/pull/4590) [`a9bfd944aea8f7822b8fc3fcf92c583f4144f672`](https://github.com/wevm/viem/commit/a9bfd944aea8f7822b8fc3fcf92c583f4144f672) Thanks [@brendanjryan](https://github.com/brendanjryan)! - Added Tempo fee token validation with typed errors.
+
+- [#4625](https://github.com/wevm/viem/pull/4625) [`ddee0b2f61723ba0a3e5b447da0f4b9db493c1f5`](https://github.com/wevm/viem/commit/ddee0b2f61723ba0a3e5b447da0f4b9db493c1f5) Thanks [@jxom](https://github.com/jxom)! - Fixed `morphHolesky` block explorer `apiUrl` (removed trailing `?`).
+
+- [#4551](https://github.com/wevm/viem/pull/4551) [`efc76f9f8e521829a90f811353cda4b5bb5ec6c5`](https://github.com/wevm/viem/commit/efc76f9f8e521829a90f811353cda4b5bb5ec6c5) Thanks [@adraffy](https://github.com/adraffy)! - Added CCIP-Read Tunneling.
+
+- [#4612](https://github.com/wevm/viem/pull/4612) [`552b7f7e755342e37e01fb57d79904b3e0689000`](https://github.com/wevm/viem/commit/552b7f7e755342e37e01fb57d79904b3e0689000) Thanks [@deodad](https://github.com/deodad)! - Fixed `prepareTransactionRequest` return types to preserve chain-specific transaction types.
+
+- [#4599](https://github.com/wevm/viem/pull/4599) [`2e9745406453746cc4890c57c2bab55c46b34eb4`](https://github.com/wevm/viem/commit/2e9745406453746cc4890c57c2bab55c46b34eb4) Thanks [@esorense](https://github.com/esorense)! - Fixed `sova` block explorer default URL.
+
+- [#4620](https://github.com/wevm/viem/pull/4620) [`277c636492387be5f2b0b50bee252d22900baf29`](https://github.com/wevm/viem/commit/277c636492387be5f2b0b50bee252d22900baf29) Thanks [@nikitakent](https://github.com/nikitakent)! - Added the MIZUHIKI Testnet Awaji
+
+- [#4596](https://github.com/wevm/viem/pull/4596) [`0c71a69e54b871ab3835d4551d647a2ade80b135`](https://github.com/wevm/viem/commit/0c71a69e54b871ab3835d4551d647a2ade80b135) Thanks [@cmende](https://github.com/cmende)! - Fixed `verifyHash` for Tempo `allowAccessKey` mode with `secp256k1` keychain access keys, whose inner envelope did not carry a `publicKey`.
+
+- [#4591](https://github.com/wevm/viem/pull/4591) [`dd230849c404bff24bcfb5e8e8da588c92f01fa4`](https://github.com/wevm/viem/commit/dd230849c404bff24bcfb5e8e8da588c92f01fa4) Thanks [@jschnelder](https://github.com/jschnelder)! - Fixed zkSync `sendTransaction` and `signTransaction` to reject the `priority` transaction type on the request path, which is not supported as a request type.
+
 ## 2.49.3
 
 ### Patch Changes
